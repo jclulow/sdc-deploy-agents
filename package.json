@@ -1,0 +1,16 @@
+{
+  "name": "sdc-deploy-agents",
+  "version": "1.0.0",
+  "description": "Interim agent deployer",
+  "author": "Joshua M. Clulow <jmc@joyent.com>",
+  "license": "ISC",
+  "dependencies": {
+    "assert-plus": "^0.1.5",
+    "bunyan": "^1.4.0",
+    "posix-getopt": "^1.1.0",
+    "sdc-clients": "git://github.com/joyent/node-sdc-clients.git",
+    "urclient": "git://github.com/joyent/node-urclient.git",
+    "vasync": "^1.6.3",
+    "verror": "^1.6.0"
+  }
+}

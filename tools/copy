@@ -1,0 +1,12 @@
+#!/bin/ksh
+
+set -o errexit
+set -o pipefail
+set -o nounset
+
+dir=$(dirname $(whence $0))/..
+
+cd ${dir}
+
+ssh ${1} mkdir -p /var/tmp/DEPLOY_AGENTS
+rsync -Pa bin cmd lib node_modules ${1}:/var/tmp/DEPLOY_AGENTS
